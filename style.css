@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: 'Noto Serif TC', serif;
+    font-size: 1.6rem;
+}
+h2{
+    margin-bottom: 3rem;
+    position: relative;
+    text-align: center;
+}
+h2::after{
+    content: "";
+    position: absolute;
+    top: 3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: .5rem;
+    width: 8rem;
+    background-color: crimson;
+    border-radius: .4rem;
+}
+.slider{
+    max-width: 30rem;
+    height: auto;
+    border-radius: .5rem;
+    margin: auto;
+    background-color: #111;
+    padding: 1rem;
+    transition: all .5s ease-in;
+}
+.slider:hover{
+    background-color: crimson;
+}
+.wrapper .owl-carousel .slider:hover p{
+    color: #fff;
+}
+img{
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.owl-carousel{
+    background-color: #000;
+    height: auto;
+    width: 100%;
+    padding: 2rem;
+}
+.wrapper .owl-carousel .slider p{
+    text-align: center;
+    color: crimson;
+    font-weight: 700;
+    margin: 2.5rem;
+    transition: all .5s ease-in-out;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 40px;
+}
+.owl-dot{
+    height: 15px;
+    width: 45px;
+    margin: 0 5px;
+    outline: none;
+    border-radius: 14px;
+    border: 2px solid crimson !important;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+.owl-dot.active, .owl-dot:hover{
+    background: crimson !important;
+}
